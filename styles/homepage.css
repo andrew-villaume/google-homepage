@@ -1,6 +1,6 @@
 html {
     background: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 header {
@@ -33,21 +33,30 @@ header {
     height: 100%;
 }
 
-.headerRight .threeBox {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-}
-
 .headerRight .signInBox {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border-radius: 10%;
+    border-radius: 5%;
     height: 2.5em;
-    width: 6em;
+    width: 7em;
     background: #1a73e8;
+}
+
+.headerRight .threeBox {
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 10px 10px 10px;
+    grid-template-columns: 10px 10px 10px;
+    grid-gap: 5px;
+    height: 100%;
+    width: auto;
+}
+
+.headerRight .threeBox .d1 .d2, .d3, .d4, .d5, .d6
+.d7, .d8, .d9 {
+    background: #5f6368;
 }
 
 .headerRight .signInBox h2{
